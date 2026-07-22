@@ -6,7 +6,7 @@ import asyncio
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-PREFIX = "."
+PREFIX = "w!"
 
 CATEGORY_ID = 1529431738949046312
 
