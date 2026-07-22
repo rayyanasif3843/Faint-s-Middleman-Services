@@ -49,7 +49,7 @@ class TicketForm(discord.ui.Modal, title="Create Support Ticket"):
             return
 
         ticket_counter += 1
-        channel_name = f"support-ticket-{ticket_counter}"
+        channel_name = f"Middleman-ticket-{ticket_counter}"
 
         overwrites = {
             interaction.guild.default_role: discord.PermissionOverwrite(view_channel=False),
@@ -223,7 +223,7 @@ async def role(ctx, member: discord.Member, role: discord.Role):
 @commands.has_permissions(administrator=True)
 async def ticketpanel(ctx):
     embed = discord.Embed(
-        title="Support Tickets",
+        title="Middleman Tickets",
         description="Press the button below to open a ticket.",
         color=discord.Color.blue()
     )
